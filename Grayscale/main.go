@@ -4,13 +4,14 @@ import (
 	"fmt"
 	"image"
 	"image/color"
+	_ "image/jpeg"
 	"image/png"
 	"os"
 )
 
 func main() {
 	// Open the original image
-	reader, err := os.Open("image.png")
+	reader, err := os.Open("image.jpg")
 	if err != nil {
 		fmt.Printf("Error: %v\n", err)
 		return
