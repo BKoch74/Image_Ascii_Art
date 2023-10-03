@@ -3,12 +3,12 @@ package main
 import (
 	"fmt"
 	"image"
-	_ "image/jpeg" // import this package to decode JPEGs
+	_ "image/jpeg" // import this package to decode JPGs
 	"os"
 )
 
 func main() {
-	reader, err := os.Open("image.jpeg")
+	reader, err := os.Open("image.jpg")
 	if err != nil {
 		fmt.Printf("Error: %v\n", err)
 		return
