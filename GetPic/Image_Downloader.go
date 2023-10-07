@@ -7,9 +7,9 @@ import (
 	"os"
 )
 
-func Download() {
+func Download(downloaded_Image string) {
 	// Variable for storing the URL of the image.
-	var input, downloaded_Image string
+	var input string
 
 	// Asking for the image URL
 	fmt.Println("Input the URL of the .jpg image file you want downloaded: ")
