@@ -1,5 +1,5 @@
 // Bryce Koch
-package AddText
+package Text
 
 import (
 	"os"

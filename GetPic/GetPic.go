@@ -1,5 +1,5 @@
 // Bryce Koch
-package Image_Downloader
+package GetPic
 
 import (
 	"fmt"

@@ -1,6 +1,6 @@
 // Bryce Koch
 // Package declaration
-package Pixels
+package ColorPixels
 
 // Required packages being imported.
 import (
