@@ -28,7 +28,7 @@ func Pic() {
 	}
 
 	// Create a new file to save the image
-	outputFile, err := os.Create("downloaded_image.jpg")
+	outputFile, err := os.Create("image.jpg")
 	if err != nil {
 		fmt.Println("Error creating the file:", err)
 		return
@@ -42,5 +42,5 @@ func Pic() {
 		return
 	}
 
-	fmt.Println("Image downloaded and saved as 'downloaded_image.jpg'")
+	fmt.Println("Image downloaded and saved as 'image.jpg'")
 }
