@@ -1,3 +1,4 @@
+// Bryce Koch
 package Grayscale
 
 import (
