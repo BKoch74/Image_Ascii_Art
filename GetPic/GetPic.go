@@ -41,6 +41,5 @@ func Pic() {
 		fmt.Println("Error saving the image:", err)
 		return
 	}
-
 	fmt.Println("Image downloaded and saved as 'image.jpg'")
 }
