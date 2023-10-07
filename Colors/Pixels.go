@@ -34,6 +34,7 @@ func Pixels(input string) {
 	}
 
 	bounds := img.Bounds()
+
 	width, height := bounds.Max.X, bounds.Max.Y
 
 	// Prints out the pixel details.
