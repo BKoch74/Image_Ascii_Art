@@ -8,7 +8,7 @@ import (
 	"os"
 )
 
-func main() {
+func GetPic() {
 	// URL of the image you want to download
 	//imageUrl := "https://images.pexels.com/photos/17929271/pexels-photo-17929271/free-photo-of-woman-standing-on-vineyard.jpeg"
 	imageUrl := "https://s3e8p5g8.rocketcdn.me/wp-content/uploads/2020/11/midwestern-state-university2.jpg"
