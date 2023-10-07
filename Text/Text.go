@@ -8,7 +8,7 @@ import (
 	"golang.org/x/image/font/gofont/goregular"
 )
 
-func Text() {
+func AddText() {
 	const W = 500
 	const H = 300
 

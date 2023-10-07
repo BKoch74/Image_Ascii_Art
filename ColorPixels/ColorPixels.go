@@ -10,7 +10,7 @@ import (
 	"os"
 )
 
-func ColorPixels() {
+func Color() {
 	reader, err := os.Open("image.jpg")
 	if err != nil {
 		fmt.Printf("Error: %v\n", err)

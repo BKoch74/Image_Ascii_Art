@@ -10,7 +10,7 @@ import (
 	"os"
 )
 
-func Grayscale() {
+func Gray() {
 	// Open the original image
 	reader, err := os.Open("image.jpg")
 	if err != nil {
