@@ -12,7 +12,7 @@ import (
 
 func Grayscale() {
 	// Open the original image
-	reader, err := os.Open("image.png")
+	reader, err := os.Open("image.jpg")
 	if err != nil {
 		fmt.Printf("Error: %v\n", err)
 		return
@@ -49,7 +49,7 @@ func Grayscale() {
 	}
 
 	// Save the grayscale image
-	grayFile, err := os.Create("gray_image.png")
+	grayFile, err := os.Create("gray_image.jpg")
 	if err != nil {
 		fmt.Printf("Error: %v\n", err)
 		return

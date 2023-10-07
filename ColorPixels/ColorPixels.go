@@ -11,7 +11,7 @@ import (
 )
 
 func ColorPixels() {
-	reader, err := os.Open("image.png")
+	reader, err := os.Open("image.jpg")
 	if err != nil {
 		fmt.Printf("Error: %v\n", err)
 		return
