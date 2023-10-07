@@ -10,17 +10,9 @@ import (
 	"os"
 )
 
-func Gray(input string) {
-	// Requesting the image file name.
-	fmt.Println("Enter the name of the .jpg image file you are using: ")
-
-	// Storing the input from the console into input.
-	fmt.Scanln(input)
-
-	fmt.Println("Opening " + input)
-
+func main() {
 	// Open the original image
-	reader, err := os.Open(input)
+	reader, err := os.Open("image.png")
 	if err != nil {
 		fmt.Printf("Error: %v\n", err)
 		return
