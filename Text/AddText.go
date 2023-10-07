@@ -1,4 +1,4 @@
-package main
+package AddText
 
 import (
 	"os"
@@ -7,7 +7,7 @@ import (
 	"golang.org/x/image/font/gofont/goregular"
 )
 
-func main() {
+func AddText() {
 	const W = 500
 	const H = 300
 

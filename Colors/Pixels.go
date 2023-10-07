@@ -1,20 +1,32 @@
-package main
+// Package decleration
+package Pixels
 
+// Required packages being imported.
 import (
 	"fmt"
 	"image"
-	_ "image/jpeg" // import this package to decode JPGs
+	_ "image/jpeg"
 	"os"
 )
 
-func main() {
-	reader, err := os.Open("image.jpg")
+func Pixels(input string) {
+	// Requesting the image file name.
+	fmt.Println("Enter the name of the .jpg image file you are using: ")
+
+	// Storing the input from the console into input.
+	fmt.Scanln(input)
+
+	fmt.Println("Opening " + input)
+
+	// Opening the image file.
+	reader, err := os.Open(input)
 	if err != nil {
 		fmt.Printf("Error: %v\n", err)
 		return
 	}
 	defer reader.Close()
 
+	// Breaking down the pixel details.
 	img, _, err := image.Decode(reader)
 	if err != nil {
 		fmt.Printf("Error: %v\n", err)
@@ -24,6 +36,7 @@ func main() {
 	bounds := img.Bounds()
 	width, height := bounds.Max.X, bounds.Max.Y
 
+	// Prints out the pixel details.
 	for y := 0; y < height; y++ {
 		for x := 0; x < width; x++ {
 			color := img.At(x, y)

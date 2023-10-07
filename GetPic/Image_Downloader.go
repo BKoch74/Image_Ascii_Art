@@ -1,4 +1,4 @@
-package main
+package Image_Downloader
 
 import (
 	"fmt"
@@ -7,10 +7,21 @@ import (
 	"os"
 )
 
-func main() {
+func Download() {
+	// Variable for storing the URL of the image.
+	var input, downloaded_Image string
+
+	// Asking for the image URL
+	fmt.Println("Input the URL of the .jpg image file you want downloaded: ")
+
+	// Storing the console input
+	fmt.Scanln(input)
+
 	// URL of the image you want to download
 	//imageUrl := "https://images.pexels.com/photos/17929271/pexels-photo-17929271/free-photo-of-woman-standing-on-vineyard.jpeg"
-	imageUrl := "https://s3e8p5g8.rocketcdn.me/wp-content/uploads/2020/11/midwestern-state-university2.jpg"
+	imageUrl := input
+
+	fmt.Println("Locating the file specified...")
 
 	// Create an HTTP GET request
 	response, err := http.Get(imageUrl)
@@ -26,8 +37,14 @@ func main() {
 		return
 	}
 
+	fmt.Println("Image found")
+
+	fmt.Println("What do you want the downloaded image file name to be?:")
+
+	fmt.Scanln(downloaded_Image)
+
 	// Create a new file to save the image
-	outputFile, err := os.Create("downloaded_image.jpg")
+	outputFile, err := os.Create(downloaded_Image)
 	if err != nil {
 		fmt.Println("Error creating the file:", err)
 		return
@@ -41,5 +58,5 @@ func main() {
 		return
 	}
 
-	fmt.Println("Image downloaded and saved as 'downloaded_image.jpg'")
+	fmt.Println("Image downloaded and saved as " + downloaded_Image)
 }
