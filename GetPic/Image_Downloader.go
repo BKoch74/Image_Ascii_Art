@@ -1,3 +1,4 @@
+// Bryce Koch
 package Image_Downloader
 
 import (

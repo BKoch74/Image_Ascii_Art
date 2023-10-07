@@ -1,4 +1,5 @@
-// Package decleration
+// Bryce Koch
+// Package declaration
 package Pixels
 
 // Required packages being imported.
