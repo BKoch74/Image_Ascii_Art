@@ -9,6 +9,11 @@ import (
 )
 
 func Pic(imageUrl) {
+
+	if imageUrl == "" {
+		imageUrl = "https://s3e8p5g8.rocketcdn.me/wp-content/uploads/2020/11/midwestern-state-university2.jpg" // Default value
+	}
+	
 	// Create an HTTP GET request
 	response, err := http.Get(imageUrl)
 	if err != nil {
